@@ -1,0 +1,34 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>A2: Lucas Kostenko!!!!</title>
+		
+		
+        <script type='text/javascript' src="Hangman.js"> 
+
+		</script>     
+    </head>
+    <body onresize="setImageSize()">   
+	    <p>
+            <form action="">
+                <img id="thePicture" border="0" src="Images/Hangman0.jpg" width="300" height="300" alt="The hangman image">
+            </form>
+        </p>  
+	    <p id="secretWordDisplay" style="font-size:32pt;">
+        </p>		
+		<input type="text" name="FUCKMYLLIFE" id="FUCKMYLLIFE"> 
+		<input type="button" name="b1" value="guess" id="bb1" onclick="processGuess()"> 
+		<br/>
+				 
+		Wrong Guesses:
+        <p id="wrongGuesses" style="font-size:15pt;"> 
+		</p>    
+	    <p id="bestScore">
+		</p>		
+		<input type="button" value="START" onclick="startGame();">
+        <p>
+           This web page has been tested in IE and FIREFOX!!!!! 
+        </p>
+    </body>
+</html>
