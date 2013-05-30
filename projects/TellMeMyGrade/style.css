@@ -1,0 +1,24 @@
+
+
+body
+{
+background-image: url('http://i225.photobucket.com/albums/dd202/kirby317317/sammamish-river-trail-bridge-the-park-at-bothell-landing.jpg');
+background-position: stretch;
+background-position: fixed;
+background-size: 100%;
+font-family: Arial, Verdana, sans-serif;
+font-size: 13px;
+color: #000000;
+text-transform: capitalize;
+word-spacing: 5px;
+text-decoration: .//////////////;
+}
+
+h1
+{
+	color; #ffoo2o;
+}
+
+a:visited {color: #290193;} 
+a:hover {color: #553333;} 
+a:focus {color: #123456;}

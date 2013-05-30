@@ -1,0 +1,288 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>A4: Justin Harper, Lucas Kostenko, Hannah Wiltsey</title>
+		
+		<script type="text/javascript" src="mienkerbtUI.js">
+		</script>
+		
+		
+		
+		
+    </head>
+    <body onload="resetGame()">
+        <h1>MIENKERBT</h1>		
+		 <table>
+            <tr> <!-- ROW 1 -->
+                <td>
+                    <img src="" id="0_0" alt="0_0" onclick="selectBlock('0_0')">
+                </td>
+                <td>
+                    <img src="" id="0_1" alt="0_1" onclick="selectBlock('0_1')">
+                </td>
+                <td>
+                    <img src="" id="0_2" alt="0_2" onclick="selectBlock('0_2')">
+                </td>
+                <td>
+                    <img src="" id="0_3" alt="0_3" onclick="selectBlock('0_3')">
+                </td>
+                <td>
+                    <img src="" id="0_4" alt="0_4" onclick="selectBlock('0_4')">
+                </td>
+                <td>
+                    <img src="" id="0_5" alt="0_6" onclick="selectBlock('0_5')">
+                </td>
+                <td>
+                    <img src="" id="0_6" alt="0_6" onclick="selectBlock('0_6')">
+                </td>
+                <td>
+                    <img src="" id="0_7" alt="0_7" onclick="selectBlock('0_7')">
+                </td>
+            </tr>
+            <tr> <!-- ROW 2 -->
+                <td>
+                    <img src="" id="1_0" alt="1_0" onclick="selectBlock('1_0')">
+                </td>
+                <td>
+                    <img src="" id="1_1" alt="1_1" onclick="selectBlock('1_1')">
+                </td>
+                <td>
+                    <img src="" id="1_2" alt="1_2" onclick="selectBlock('1_2')">
+                </td>
+                <td>
+                    <img src="" id="1_3" alt="1_3" onclick="selectBlock('1_3')">
+                </td>
+                <td>
+                    <img src="" id="1_4" alt="1_4" onclick="selectBlock('1_4')">
+                </td>
+                <td>
+                    <img src="" id="1_5" alt="1_5" onclick="selectBlock('1_5')">
+                </td>
+                <td>
+                    <img src="" id="1_6" alt="1_6" onclick="selectBlock('1_6')">
+                </td>
+                <td>
+                    <img src="" id="1_7" alt="1_7" onclick="selectBlock('1_7')">
+                </td>
+                	<td>
+					<img src="Images/blank.jpg" alt="">
+				</td>
+				<td>
+					<img src="Images/up.jpg" id="upArrow" alt="Up_Arrow" onclick="moveup()">
+				</td>
+            </tr>
+            <tr> <!-- ROW 3 -->
+                <td>
+                    <img src="" id="2_0" alt="2_0" onclick="selectBlock('2_0')">
+                </td>
+                <td>
+                    <img src="" id="2_1" alt="2_1" onclick="selectBlock('2_1')">
+                </td>
+                <td>
+                    <img src="" id="2_2" alt="2_2" onclick="selectBlock('2_2')">
+                </td>
+                <td>
+                    <img src="" id="2_3" alt="2_3" onclick="selectBlock('2_3')">
+                </td>
+                <td>
+                    <img src="" id="2_4" alt="2_4" onclick="selectBlock('2_4')">
+                </td>
+                <td>
+                    <img src="" id="2_5" alt="2_5" onclick="selectBlock('2_5')">
+                </td>
+                <td>
+                    <img src="" id="2_6" alt="2_6" onclick="selectBlock('2_6')">
+                </td>
+                <td>
+                    <img src="" id="2_7" alt="2_7" onclick="selectBlock('2_7')">
+                </td>
+                <td>
+					<img src="Images/left.jpg" id="leftArrow" alt="Left_Arrow" onclick="moveleft()">
+				</td>
+				<td>
+					<img src="Images/reset.jpg" id ="resetButton" alt="Reset" onclick="resetGame()">
+				</td>
+				<td>
+					<img src="Images/right.jpg" id="rightArrow" alt="Right_Arrow" onclick="moveright()">
+				</td>
+            </tr>
+            <tr><!-- ROW 4 -->
+                <td>
+                    <img src="" id="3_0" alt="3_0" onclick="selectBlock('3_0')">
+                </td>
+                <td>
+                    <img src="" id="3_1" alt="3_1" onclick="selectBlock('3_1')">
+                </td>
+                <td>
+                    <img src="" id="3_2" alt="3_2" onclick="selectBlock('3_2')">
+                </td>
+                <td>
+                    <img src="" id="3_3" alt="3_3" onclick="selectBlock('3_3')">
+                </td>
+                <td>
+                    <img src="" id="3_4" alt="3_4" onclick="selectBlock('3_4')">
+                </td>
+                <td>
+                    <img src="" id="3_5" alt="3_5" onclick="selectBlock('3_5')">
+                </td>
+                <td>
+                    <img src="" id="3_6" alt="3_6" onclick="selectBlock('3_6')">
+                </td>
+                <td>
+                    <img src="" id="3_7" alt="3_7" onclick="selectBlock('3_7')">
+                </td>
+                <td>
+					<img src="Images/blank.jpg" alt="">
+				</td>
+				<td>
+					<img src="Images/down.jpg" id="downArrow" alt="Down_Arrow" onclick="movedw()">
+					
+				</td>
+            </tr>
+            <tr> <!-- ROW 5 -->
+                <td>
+                    <img src="" id="4_0" alt="4_0" onclick="selectBlock('4_0')">
+                </td>
+                <td>
+                    <img src="" id="4_1" alt="4_1" onclick="selectBlock('4_1')">
+                </td>
+                <td>
+                    <img src="" id="4_2" alt="4_2" onclick="selectBlock('4_2')">
+                </td>
+                <td>
+                    <img src="" id="4_3" alt="4_3" onclick="selectBlock('4_3')">
+                </td>
+                <td>
+                    <img src="" id="4_4" alt="4_4" onclick="selectBlock('4_4')">
+                </td>
+                <td>
+                    <img src="" id="4_5" alt="4_5" onclick="selectBlock('4_5')">
+                </td>
+                <td>
+                    <img src="" id="4_6" alt="4_6" onclick="selectBlock('4_6')">
+                </td>
+                <td>
+                    <img src="" id="4_7" alt="4_7" onclick="selectBlock('4_7')">
+                </td>
+                <td>
+                	<img src="Images/shoveldown.jpg" alt="shoveldown" onclick="pickDirtDw()">
+                </td>
+                <td>
+                	<img src="Images/shovelup.jpg" alt="shovelup" onclick="pickDirtUp()">
+                </td>
+                <td>
+                	<img src="Images/shovelright.jpg" alt="shovelright" onclick="pickDirtRight()">
+                </td>
+                <td>
+                	<img src="Images/shovelleft.jpg" alt="shovelleft" onclick="pickDirtLeft()">
+                </td>
+            </tr>
+            <tr> <!-- ROW 6 -->
+                <td>
+                    <img src="" id="5_0" alt="5_0" onclick="selectBlock('5_0')">
+                </td>
+                <td>
+                    <img src="" id="5_1" alt="5_1" onclick="selectBlock('5_1')">
+                </td>
+                <td>
+                    <img src="" id="5_2" alt="5_2" onclick="selectBlock('5_2')">
+                </td>
+                <td>
+                    <img src="" id="5_3" alt="5_3" onclick="selectBlock('5_3')">
+                </td>
+                <td>
+                    <img src="" id="5_4" alt="5_4" onclick="selectBlock('5_4')">
+                </td>
+                <td>
+                    <img src="" id="5_5" alt="5_5" onclick="selectBlock('5_5')">
+                </td>
+                <td>
+                    <img src="" id="5_6" alt="5_6" onclick="selectBlock('5_6')">
+                </td>
+                <td>
+                    <img src="" id="5_7" alt="5_7" onclick="selectBlock('5_7')">
+                </td>
+				<td>
+					<img src="Images/bukkitdown.jpg" alt="bukkitdown" onclick="setdirtD();">
+				</td>
+				<td>
+					<img src="Images/bukkitleft.jpg" alt="bukkitleft" onclick="setdirtL()">
+				</td>
+				<td>
+					<img src="Images/bukkitright.jpg" alt="bukkitright" onclick="setdirtR()">
+				</td>
+            </tr>
+            <tr><!-- ROW 7 -->
+                <td>
+                    <img src="" id="6_0" alt="6_0" onclick="selectBlock('6_0')">
+                </td>
+                <td>
+                    <img src="" id="6_1" alt="6_1" onclick="selectBlock('6_1')">
+                </td>
+                <td>
+                    <img src="" id="6_2" alt="6_2" onclick="selectBlock('6_2')">
+                </td>
+                <td>
+                    <img src="" id="6_3" alt="6_3" onclick="selectBlock('6_3')">
+                </td>
+                <td>
+                    <img src="" id="6_4" alt="6_4" onclick="selectBlock('6_4')">
+                </td>
+                <td>
+                    <img src="" id="6_5" alt="6_5" onclick="selectBlock('6_5')">
+                </td>
+                <td>
+                    <img src="" id="6_6" alt="6_6" onclick="selectBlock('6_6')">
+                </td>
+                <td>
+                    <img src="" id="6_7" alt="6_7" onclick="selectBlock('6_7')">
+                </td>
+                <td>
+                	<img src="Images/esplode.jpg" alt="esplode" onclick="esplode()">
+                </td>
+                <td>
+                	<img src="Images/blank.jpg" alt="">
+                </td>
+                <td>
+                	<img src="Images/freedirt.jpg" alt="freedirt" onclick="freeD()">
+                </td>
+            </tr>
+            <tr> <!-- ROW 8 -->
+                <td>
+                    <img src="" id="7_0" alt="7_0" onclick="selectBlock('7_0')">
+                </td>
+                <td>
+                    <img src="" id="7_1" alt="7_1" onclick="selectBlock('7_1')">
+                </td>
+                <td>
+                    <img src="" id="7_2" alt="7_2" onclick="selectBlock('7_2')">
+                </td>
+                <td>
+                    <img src="" id="7_3" alt="7_3" onclick="selectBlock('7_3')">
+                </td>
+                <td>
+                    <img src="" id="7_4" alt="7_4" onclick="selectBlock('7_4')">
+                </td>
+                <td>
+                    <img src="" id="7_5" alt="7_5" onclick="selectBlock('7_5')">
+                </td>
+                <td>
+                    <img src="" id="7_6" alt="7_6" onclick="selectBlock('7_6')">
+                </td>
+                <td>
+                    <img src="" id="7_7" alt="7_7" onclick="selectBlock('7_7')">
+                </td>
+            </tr>
+        </table>
+		<br/>
+				<div id="dirtInPocket">You have 0 dirt pieces.</div>
+		<br/><br/>
+		<div id="helpSpot"><img src="Images/help.jpg" id="help" alt="help" onclick="helpMe()"></div>
+		<br/><br/><br/>
+		
+		Tested in: Internet Explorer, Mozilla Firefox, Google Chrome<br/>
+		images courtesy of minecraft
+    </body>
+</html>
