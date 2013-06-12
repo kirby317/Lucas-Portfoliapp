@@ -5,14 +5,17 @@
     <title></title>
     <link rel="stylesheet" href="jquery.mobile.css" />
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
-<link rel="stylesheet" type="text/css" href="style.css">
-<!-- <link rel="stylesheet" href="jquery-mobile-theme-172859-0/themes/grooming.css">
- --><script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
-<script src="phonegap.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" href="jquery-mobile-theme-172859-0/themes/grooming.css">
+ -->
 
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+    <script src="phonegap.js"></script>
+<script type="text/javascript" src="https://www.dropbox.com/static/api/1/dropins.js" id="dropboxjs" data-app-key="gqlrs7z8memrbxm"></script>
+    <script src="jscript.js"></script>
 
 </head>
 <body>
@@ -27,9 +30,9 @@
         <div data-role="content">
             <ul data-role="listview">
 
-                <li><a href="#javascript">   javascript</a></li>
-                <li><a href="#html">         html</a></li>
-                <li><a href="#c">            c#</a></li>
+                <li><a href="#javascript">javascript</a></li>
+                <li><a href="#html">html</a></li>
+                <li><a href="#c">c#</a></li>
                 <li><a href="#functionality">heres my functionality</a></li>
 
             </ul>
@@ -147,6 +150,13 @@
                 <li>
                     <a href="https://dl.dropboxusercontent.com/s/akkzcwzwypzhl1g/QuizProgram.exe?token_hash=AAEB1H5uvnPw_9Xh5hjI4B_6JrsJBFLm0riNfiDNWwWulg&dl=1">Math quiz exe download</a>
                 </li>
+                <li>
+                    <a href="https://skydrive.live.com/redir?resid=77A269756B8A6E86!199209"> weather tracker <br />
+                        a c# created, CMD based weather reader (data read from a text file)
+                        <img src="projects/weather.jpg" />
+                    </a>
+                    </li>
+                <li><a href="https://www.dropbox.com/s/ci3jlodlnwlh7ya/weather.zip">weather tracker and dummy data download</a></li>
             </ul>
         </div>
 
@@ -167,19 +177,14 @@
             <h1>functionality </h1>
             <a href="#home" data-role="button" data-icon="home" class="ui-li-right">Home</a>
         </div>
-       
-         <script 
-             type="text/javascript" 
-             src="https://www.dropbox.com/static/api/1/dropins.js" 
-             id="dropboxjs" 
-             data-app-key="zsv0g9jt7t8b0nc"
-             ></script>
-        
+
+
+
         <div data-role="thebackground">
-            
-<input type="button" name="select file" onclick="dbchoose"/>
 
 
+<input type="button"  onclick="doit()" value="click me to pick a dropbox thing!" />
+            <img id="pic"/>
         </div>
 
 
