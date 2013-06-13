@@ -10,7 +10,6 @@ multiselect: false,
             // true enables multiple file selection.
 success: function(files) {
     // Required. Called when a user selects an item in the Chooser
-    alert("Here's the file link:" + files[0].link)
     $("#pic").attr("src", files[0].link)
 },
 cancel:  function() {
@@ -33,5 +32,4 @@ cancel:  function() {
     });
     function doit() {
         Dropbox.choose(options);
-        $("#pic").attr("src", files[0].link)
     }
